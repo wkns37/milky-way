@@ -1,0 +1,10 @@
+01 Xiaomi
+02 Apple
+03 Huawei
+04 HTC
+05 Google
+06 Samsung
+07 Sony
+08 ZTE
+09 Lenovo
+10 LG
