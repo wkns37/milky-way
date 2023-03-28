@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{E155AA62-22A1-42EA-BFA0-61FE2A5E6C7D}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Coursework</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="CourseworkLibrary">
+      <HintPath>..\..\CourseworkLibrary\bin\Debug\Win32\CourseworkLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\App.cpp" />
+    <ClCompile Include="src\user\User.cpp" />
+    <ClCompile Include="src\database\UserAnswers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\App.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\Auth.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\Material.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionEight.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionEleven.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionFifteen.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionFive.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionFour.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionFourteen.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionNine.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionOne.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionSeven.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionSix.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionSixteen.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionTen.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionThirteen.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionThree.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionTwelve.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\QuestionTwo.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\questions\Results.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\Splash.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="src\user\User.h" />
+    <ClInclude Include="src\database\UserAnswers.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="src\App.resx">
+      <DependentUpon>src\App.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.App.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.App.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.App.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.App.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Auth.resx">
+      <DependentUpon>src\Auth.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.Auth.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.Auth.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.Auth.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.Auth.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Material.resx">
+      <DependentUpon>src\Material.h</DependentUpon>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.Material.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.Material.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.Material.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.Material.resources</ExcludedFromBuild>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.Material.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.Material.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.Material.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.Material.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionEight.resx">
+      <DependentUpon>src\questions\QuestionEight.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionEight.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionEight.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionEight.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionEight.resources</LogicalName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionEight.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionEight.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionEight.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionEight.resources</ExcludedFromBuild>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionEleven.resx">
+      <DependentUpon>src\questions\QuestionEleven.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionEleven.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionEleven.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionEleven.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionEleven.resources</LogicalName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionEleven.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionEleven.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionEleven.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionEleven.resources</ExcludedFromBuild>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionFifteen.resx">
+      <DependentUpon>src\questions\QuestionFifteen.h</DependentUpon>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionFifteen.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionFifteen.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionFifteen.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionFifteen.resources</ExcludedFromBuild>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionFifteen.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionFifteen.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionFifteen.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionFifteen.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionFive.resx">
+      <DependentUpon>src\questions\QuestionFive.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionFive.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionFive.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionFive.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionFive.resources</LogicalName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionFive.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionFive.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionFive.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionFive.resources</ExcludedFromBuild>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionFour.resx">
+      <DependentUpon>src\questions\QuestionFour.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionFour.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionFour.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionFour.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionFour.resources</LogicalName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionFour.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionFour.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionFour.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionFour.resources</ExcludedFromBuild>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionFourteen.resx">
+      <DependentUpon>src\questions\QuestionFourteen.h</DependentUpon>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionFourteen.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionFourteen.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionFourteen.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionFourteen.resources</ExcludedFromBuild>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionFourteen.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionFourteen.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionFourteen.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionFourteen.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionNine.resx">
+      <DependentUpon>src\questions\QuestionNine.h</DependentUpon>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionNine.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionNine.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionNine.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionNine.resources</ExcludedFromBuild>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionNine.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionNine.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionNine.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionNine.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionOne.resx">
+      <DependentUpon>src\questions\QuestionOne.h</DependentUpon>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionOne.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionOne.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionOne.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionOne.resources</ExcludedFromBuild>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionOne.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionOne.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionOne.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionOne.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionSeven.resx">
+      <DependentUpon>src\questions\QuestionSeven.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionSeven.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionSeven.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionSeven.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionSeven.resources</LogicalName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionSeven.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionSeven.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionSeven.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionSeven.resources</ExcludedFromBuild>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionSix.resx">
+      <DependentUpon>src\questions\QuestionSix.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionSix.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionSix.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionSix.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionSix.resources</LogicalName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionSix.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionSix.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionSix.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionSix.resources</ExcludedFromBuild>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionSixteen.resx">
+      <DependentUpon>src\questions\QuestionSixteen.h</DependentUpon>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionSixteen.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionSixteen.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionSixteen.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionSixteen.resources</ExcludedFromBuild>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionSixteen.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionSixteen.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionSixteen.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionSixteen.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionTen.resx">
+      <DependentUpon>src\questions\QuestionTen.h</DependentUpon>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionTen.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionTen.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionTen.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionTen.resources</ExcludedFromBuild>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionTen.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionTen.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionTen.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionTen.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionThirteen.resx">
+      <DependentUpon>src\questions\QuestionThirteen.h</DependentUpon>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionThirteen.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionThirteen.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionThirteen.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionThirteen.resources</ExcludedFromBuild>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionThirteen.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionThirteen.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionThirteen.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionThirteen.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionThree.resx">
+      <DependentUpon>src\questions\QuestionThree.h</DependentUpon>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionThree.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionThree.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionThree.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionThree.resources</ExcludedFromBuild>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionThree.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionThree.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionThree.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionThree.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionTwelve.resx">
+      <DependentUpon>src\questions\QuestionTwelve.h</DependentUpon>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionTwelve.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionTwelve.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionTwelve.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionTwelve.resources</ExcludedFromBuild>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionTwelve.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionTwelve.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionTwelve.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionTwelve.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\QuestionTwo.resx">
+      <DependentUpon>src\questions\QuestionTwo.h</DependentUpon>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionTwo.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionTwo.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionTwo.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionTwo.resources</ExcludedFromBuild>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.QuestionTwo.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.QuestionTwo.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.QuestionTwo.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.QuestionTwo.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\questions\Results.resx">
+      <DependentUpon>src\questions\Results.h</DependentUpon>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.Results.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.Results.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.Results.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.Results.resources</ExcludedFromBuild>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.Results.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.Results.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.Results.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.Results.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Splash.resx">
+      <DependentUpon>src\Splash.h</DependentUpon>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.Results.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.Results.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.Results.resources</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.Results.resources</ExcludedFromBuild>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Coursework.Splash.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Coursework.Splash.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Coursework.Splash.resources</LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Coursework.Splash.resources</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
